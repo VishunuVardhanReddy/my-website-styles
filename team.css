@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the cards */
+    width: 100%;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 80%; /* Decreased width */
+    height: auto;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+    overflow: hidden;
+    position: relative; /* Add relative positioning to the card */
+    align-items: center; /* Align items to center */
+}
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+    position: relative; /* Add relative positioning to the image */
+}
+.card-details {
+    flex: 1;
+    padding: 10px;
+    display: none;
+    transition: display 0.3s ease;
+    color: #555; /* Add color to card description */
+}
+.card-details h3 {
+    font-size: 1.5em;
+    color: #2c3e50; /* Darker shade for the name */
+    margin-bottom: 5px;
+}
+.card-details p {
+    font-size: 1em;
+    color: #e74c3c; /* Red color for the description */
+    line-height: 1.5;
+}
+.card .toggle-btn {
+    position: absolute;
+    top: 10px; /* Position the button near the profile picture */
+    left: 160px; /* Position the button next to the profile picture */
+    cursor: pointer;
+    font-size: 20px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card:nth-child(1) .card-details {
+    background-color: #ffebcd;
+}
+.card:nth-child(2) .card-details {
+    background-color: #e6e6fa;
+}
+.card:nth-child(3) .card-details {
+    background-color: #f0fff0;
+}
+.card:nth-child(4) .card-details {
+    background-color: #f5f5dc;
+}
+.card:nth-child(5) .card-details {
+    background-color: #ffe4e1;
+}
+.card:nth-child(6) .card-details {
+    background-color: #fafad2;
+}
+.card:nth-child(7) .card-details {
+    background-color: #d3ffce;
+}
+.social-icons i {
+    margin-right: 5px;
+    color: #E1306C; /* Instagram brand color */
+}
