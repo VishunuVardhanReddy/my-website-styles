@@ -23,7 +23,7 @@ body {
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
-    padding-top: 60px; /* Adjust this value based on the height of your header */
+    padding-top: 0; /* Adjust this value to remove space above the navbar */
 }
 
 .brand-logo-name {
@@ -52,6 +52,7 @@ a:hover {
     box-shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.2);
     width: 100%;
     height: 10vh;
+    position:static; /* Change from fixed to relative */
     top: 0;
     z-index: 1000;
 }
@@ -149,9 +150,10 @@ a:hover {
 }
 
 .school-img {
-    width: 100%;
+    width: 300%;
     height: 75vh;
     object-fit: cover;
+    margin-bottom: 30px; /* Add space after the school image container */
 }
 
 .img-container {
@@ -292,6 +294,7 @@ button[type="submit"]:hover {
 
 #about-us-section {
     background: #f8f9fa;
+    margin-top: 30px;
     text-align: center;
     width: 90%;
     margin: 0 auto;
@@ -302,9 +305,10 @@ button[type="submit"]:hover {
 }
 
 .about-us-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
+    /* background-color: #f8f9fa; */ /* Remove this line */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
 .subheading {
@@ -354,7 +358,6 @@ span {
 }
 
 .about-us-container {
-    background-color: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
