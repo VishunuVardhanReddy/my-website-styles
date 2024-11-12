@@ -11,7 +11,7 @@ body {
 }
 .card {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Ensure the layout is row */
     width: 80%; /* Decreased width */
     height: auto;
     margin: 10px 0;
@@ -22,6 +22,12 @@ body {
     overflow: hidden;
     position: relative; /* Add relative positioning to the card */
     align-items: center; /* Align items to center */
+}
+/* Enhance hover effect */
+.card:hover {
+    box-shadow: 0 4px 15px rgb(4, 4, 4);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card img {
     width: 150px;
@@ -34,7 +40,9 @@ body {
 .card-details {
     flex: 1;
     padding: 10px;
-    display: none;
+    display: flex; /* Change display to flex */
+    flex-direction: column; /* Ensure the details are in a column */
+    justify-content: center; /* Center the details vertically */
     transition: display 0.3s ease;
     color: #555; /* Add color to card description */
 }
@@ -49,20 +57,7 @@ body {
     line-height: 1.5;
 }
 .card .toggle-btn {
-    position: absolute;
-    top: 10px; /* Position the button near the profile picture */
-    left: 160px; /* Position the button next to the profile picture */
-    cursor: pointer;
-    font-size: 20px;
-    background: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none; /* Hide the toggle button */
 }
 .card:nth-child(1) .card-details {
     background-color: #ffebcd;
